@@ -11,8 +11,6 @@ import type { IContext } from '@/context'
 //     }
 // }
 
-import Button from 'primevue/button'
-
 type IComponent = { [key: string]: VueComponent }
 
 const layouts = {} as IComponent
@@ -30,24 +28,6 @@ function registerLayouts(app: App<Element>, ctx: IContext) {
 	}
 }
 
-const primeVues = {
-	Button,
-} as IComponent
-
-function registerPrimeVueComponents(app: App<Element>, ctx: IContext) {
-	for (const cmp in primeVues) {
-		ctx.Component.register(
-			app,
-			{
-				component: primeVues[cmp],
-				name: cmp,
-			},
-			'primevue'
-		)
-	}
-}
-
 export default function registerGlobalComponents(app: App<Element>, ctx: IContext) {
 	// registerLayouts(app, ctx)
-	registerPrimeVueComponents(app, ctx)
 }

@@ -22,7 +22,7 @@
 		"merge": "node scripts/create-merge-request.js"
 	},
 	"dependencies": {
-		"axios": "^0.23.0",
+		"axios": "^0.24.0",
 		"vue": "^3.2.13",
 		"vue-router": "^4.0.11",
 		"vuex": "^4.0.2"

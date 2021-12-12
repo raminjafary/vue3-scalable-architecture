@@ -33,7 +33,7 @@
 		"@types/node": "^16.11.2",
 		"@typescript-eslint/eslint-plugin": "^5.1.0",
 		"@typescript-eslint/parser": "^5.1.0",
-		"@vitejs/plugin-vue": "^1.9.3",
+		"@vitejs/plugin-vue": "^2.0.0",
 		"@vue/compiler-sfc": "^3.2.20",
 		"@vue/eslint-config-prettier": "^6.0.0",
 		"@vue/eslint-config-typescript": "^8.0.0",

@@ -1,0 +1,15 @@
+FROM node:lts-alpine as build
+
+WORKDIR /app
+
+COPY package.json yarn.lock ./
+
+RUN NODE_ENV=development yarn install \
+  --prefer-offline \
+  --frozen-lockfile \
+  --non-interactive \
+  --production=false
+
+COPY . ./
+
+CMD ["yarn", "dev"]

@@ -1,4 +1,4 @@
-/* eslint-disable-next-line @typescript-eslint/no-var-requires*/
+/* eslint-disable no-console */
 const { exec } = require('child_process')
 
 const targetBranch = process.argv[2] || 'develop'

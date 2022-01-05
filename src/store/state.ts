@@ -1,7 +1,5 @@
-export interface State {
-	global: boolean
+export const state = {
+	routes: [] as string[],
 }
 
-export const state: State = {
-	global: false,
-}
+export type State = typeof state

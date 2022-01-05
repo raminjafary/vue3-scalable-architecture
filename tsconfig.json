@@ -15,7 +15,7 @@
 		"paths": {
 			"@/*": ["src/*"]
 		},
-		"types": ["@types/node"]
+		"types": ["@types/node", "@types/jest"]
 	},
-	"include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"]
+	"include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue", "types/**/*.d.ts"]
 }

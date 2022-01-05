@@ -20,7 +20,7 @@ class ContextAdapter {
 	}
 
 	register<T extends { name: ProviderNames }>(Provider: Constructor<T>) {
-		const service = new Provider(this)
+		const service = new Provider()
 		const providerName = service.name
 
 		if (this.#providerNames.includes(providerName)) {

@@ -1,6 +1,7 @@
 module.exports = {
 	extends: ['stylelint-config-standard'],
 	rules: {
+		indentation: null,
 		'at-rule-no-unknown': [
 			true,
 			{
@@ -18,11 +19,7 @@ module.exports = {
 		],
 		'declaration-block-trailing-semicolon': null,
 		'no-descending-specificity': null,
-		'selector-pseudo-element-no-unknown': [
-			true,
-			{
-				ignorePseudoElements: ['v-deep'],
-			},
-		],
+		'selector-pseudo-element-no-unknown': [true, { ignorePseudoElements: [] }],
+		'selector-pseudo-class-no-unknown': [true, { ignorePseudoClasses: ['global', 'deep'] }],
 	},
 }

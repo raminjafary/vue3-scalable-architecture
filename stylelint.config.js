@@ -1,5 +1,5 @@
 module.exports = {
-	extends: ['stylelint-config-standard'],
+	extends: ['stylelint-config-html/vue', 'stylelint-config-standard'],
 	rules: {
 		indentation: null,
 		'at-rule-no-unknown': [

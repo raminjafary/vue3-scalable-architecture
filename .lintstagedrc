@@ -1,5 +1,0 @@
-{
-  "**/*.{ts,js,vue}": "cross-env NODE_ENV=production yarn lint:fix",
-  "**/*": "yarn format:fix",
-  "**/*.{css,scss,vue}": "yarn lint:style:fix"
-}

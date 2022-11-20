@@ -1,4 +1,4 @@
-@import '@/assets/fonts';
+@import url('@/assets/fonts');
 
 * {
 	font-family: Vazir, sans-serif;

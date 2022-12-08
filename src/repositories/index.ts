@@ -4,7 +4,7 @@ import auth from './auth'
 
 function noop() {}
 
-function lazyBind<T>(repoFactory: any, repoInterface: T, axios: AxiosInstance) {
+function lazyBind(repoFactory: any, repoInterface: any, axios: AxiosInstance) {
 	return {
 		...Object.keys(repoInterface).reduce((acc, method: any) => {
 			const resolvedMethod = async (...args: any[]) => {
@@ -22,7 +22,7 @@ function lazyBind<T>(repoFactory: any, repoInterface: T, axios: AxiosInstance) {
 export default function repositories(axios: AxiosInstance) {
 	return {
 		get auth() {
-			return lazyBind<IAuth>(() => import('./auth'), { login: noop } /* or -> auth(axios) */, axios)
+			return lazyBind(() => import('./auth'), { login: noop } /* or -> auth(axios) */, axios)
 		},
 	}
 }

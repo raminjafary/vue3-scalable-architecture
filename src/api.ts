@@ -1,10 +1,10 @@
-import axios, { AxiosRequestConfig, AxiosResponse } from 'axios'
+import axios, { InternalAxiosRequestConfig, AxiosResponse } from 'axios'
 
 const axiosInstance = axios.create({
 	baseURL: import.meta.env?.VITE_BASE_URL as string,
 })
 
-function handleRequest(config: AxiosRequestConfig) {
+function handleRequest(config: InternalAxiosRequestConfig) {
 	// set auth header, etc.
 	return config
 }

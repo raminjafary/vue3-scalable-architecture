@@ -6,7 +6,8 @@ export default async function bootstrap(context: IContext) {
 	const mods: IContext[] = []
 
 	for (const path in modules) {
-		const mod: any = await modules[path]()
+		const mod = await modules[path]()
+		//@ts-ignore
 		mods.push(mod.default(context))
 	}
 

@@ -1,6 +1,4 @@
 import type { AxiosInstance } from 'axios'
-import type { IAuth } from './auth/types'
-import auth from './auth'
 
 function noop() {}
 

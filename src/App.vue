@@ -9,6 +9,6 @@ useRepositoryProvider()
 </template>
 <style scoped>
 div {
-  @apply mx-8;
+	@apply mx-8;
 }
 </style>

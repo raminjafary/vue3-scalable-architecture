@@ -29,5 +29,5 @@ function registerLayouts(app: App<Element>, ctx: IContext) {
 }
 
 export default function registerGlobalComponents(app: App<Element>, ctx: IContext) {
-	// registerLayouts(app, ctx)
+	registerLayouts(app, ctx)
 }

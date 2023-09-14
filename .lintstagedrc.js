@@ -5,5 +5,6 @@ module.exports = {
 		)} --fix`,
 	'**/*': (fileNames) =>
 		`prettier  --ignore-path .gitignore -u --write ${fileNames.join(' ')} --fix`,
-	'**/*.{css,scss,vue}': (fileNames) => `stylelint --ignore-path .gitignore ${fileNames.join(' ')}`,
+	'**/*.{css,scss,vue}': (fileNames) =>
+		`stylelint --ignore-path .gitignore ${fileNames.join(' ')} --fix`,
 }

@@ -19,6 +19,7 @@ export interface Actions {
 }
 
 export const actions: ActionTree<State, State> & Actions = {
+	// eslint-disable-next-line @typescript-eslint/no-unused-vars
 	async [ActionMethods.routes]({ state, commit }) {
 		commit(MutationMethods.ROUTES, [])
 	},

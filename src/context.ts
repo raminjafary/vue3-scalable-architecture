@@ -10,7 +10,8 @@ export interface IContext {
 	Component: Component
 }
 
-type Constructor<T> = new (...args: any[]) => T
+//@ts-ignore
+type Constructor<T> = new (...args: []) => T
 
 class ContextAdapter {
 	#providerNames!: ProviderNames[]

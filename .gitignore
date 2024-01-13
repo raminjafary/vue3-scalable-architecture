@@ -6,3 +6,4 @@ dist-ssr
 yarn-error.log
 .husky/_
 coverage
+.yarn

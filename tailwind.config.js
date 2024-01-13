@@ -1,4 +1,4 @@
-module.exports = {
+export default {
 	mode: 'jit',
 	future: {
 		removeDeprecatedGapUtilities: true,

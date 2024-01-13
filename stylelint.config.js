@@ -1,4 +1,4 @@
-module.exports = {
+export default {
 	extends: ['stylelint-config-html/vue', 'stylelint-config-standard'],
 	rules: {
 		indentation: 2,

@@ -1,4 +1,4 @@
-module.exports = {
+export default {
 	'**/*.{ts,js,vue}': (fileNames) =>
 		`cross-env NODE_ENV=production eslint --ext .js,.ts,.vue --ignore-path .gitignore ${fileNames.join(
 			' '
